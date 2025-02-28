@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case-01</title>
+
+  <link rel="stylesheet" href="../assets/lib/normalize.css">
+
+  <style>
+
+    body{
+      overflow: hidden;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    body>div{
+      height: 50%;
+      width: 50%;
+      position: absolute;
+    }
+
+    body>div:first-child{
+      background: red;
+    }
+
+    body>div:nth-child(2){
+      background: green;
+      top: 0;
+      right: 0;
+    }
+
+    body>div:nth-child(3){
+      background: darkorange;
+      left: 0;
+      bottom: 0;
+    }
+
+    body>div:nth-child(4){
+      background: deeppink;
+      right: 0;
+      bottom: 0;
+    }
+
+    body>div:nth-child(5){
+      position: absolute;
+      height: 150px;
+      width: 150px;
+      background: white;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    body>div:nth-child(5)>div{
+      position: absolute;
+      height: 90px;
+      width: 90px;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      border-radius: 100%;
+      background-color: red;
+    }
+
+    [class="middle-square"]{
+      position: absolute;
+      height: 150px;
+      width: 150px;
+      background-color: white;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      border-radius: 100%;
+    }
+
+    [class="middle-circle"]{
+      position: absolute;
+      height: 75px;
+      width: 75px;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background-color: red;
+    }
+
+    [class="corner"]{
+      position: absolute;
+      height: 150px;
+      width: 150px;
+      background-color: white;
+    }
+
+    body>div:nth-child(6){
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-bottom-right-radius: 100%;
+    }
+
+    body>div:nth-child(7){
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-top-right-radius: 100%;
+    }
+
+    body>div:nth-child(8){
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-top-left-radius: 100%;
+    }
+
+    body>div:nth-child(9){
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-bottom-left-radius: 100%;
+    }
+
+    [class="middle-half-circle"]{
+      position: absolute;
+      height: 125px;
+      width: 125px;
+      background-color: white;
+    }
+
+    body>div:nth-child(10){
+      top: -65px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border-radius: 0 0 100% 100%;
+    }
+
+    body>div:nth-child(11){
+      left: 0;
+      right: 0;
+      bottom: -65px;
+      margin: auto;
+      border-radius: 100% 100% 0 0 ;
+    }
+
+  </style>
+
+</head>
+<body>
+
+
+<!--first child-->
+<div>
+  <div class="middle-square">
+    <div class="middle-circle"></div>
+  </div>
+</div>
+
+<!--second child-->
+<div>
+  <div class="middle-square">
+    <div class="middle-circle"></div>
+  </div>
+</div>
+
+<!--third child-->
+<div>
+  <div class="middle-square">
+    <div class="middle-circle"></div>
+  </div>
+</div>
+
+<!--forth child-->
+<div>
+  <div class="middle-square">
+    <div class="middle-circle"></div>
+  </div>
+</div>
+
+
+<div>
+  <div></div>
+</div>
+
+<!--corners-->
+<div class="corner"></div>
+<div class="corner"></div>
+<div class="corner"></div>
+<div class="corner"></div>
+
+<!--middle half-circle-->
+<div class="middle-half-circle"></div>
+<div class="middle-half-circle"></div>
+
+</body>
+</html>
